@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Report Issue</title>
+</head>
+<body>
+
+<h2>Report Public Issue</h2>
+
+<form action="ReportServlet" method="post" enctype="multipart/form-data">
+
+Issue Type:
+<select name="issueType">
+  <option>Garbage</option>
+  <option>Road</option>
+  <option>Water</option>
+  <option>Electricity</option>
+  <option>Beggar Assistance</option>
+</select><br><br>
+
+Description:<br>
+<textarea name="description"></textarea><br><br>
+
+Photo Proof:
+<input type="file" name="photo" required><br><br>
+
+Location:
+<input type="text" name="location"><br><br>
+
+<button type="submit">Submit Complaint</button>
+
+</form>
+
+</body>
+</html>
+
